@@ -1,0 +1,17 @@
+{
+  "name": "node-solver-server",
+  "version": "1.0.0",
+  "description": "A simple client-server example to show solving logic",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js",
+    "server": "node server.js",
+    "client": "node client.js"
+  },
+  "author": "Chris Baker",
+  "license": "MIT"
+}

@@ -1,6 +1,8 @@
 var net = require('net');
 var solver = require('./solver');
 
+var port = 5555;
+
 net.createServer(function (socket) {
   socket.setEncoding("utf8");
   socket.write("Connected to math server!\n");
@@ -9,6 +11,6 @@ net.createServer(function (socket) {
     socket.write(solver.solve(data) + "\n");
   });
 
-}).listen(5555);
+}).listen(port);
 
-process.stdout.write("Server running on port 5555\n");
+process.stdout.write("Server running on port " + port + "\n");
