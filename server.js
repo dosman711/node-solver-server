@@ -6,7 +6,7 @@ net.createServer(function (socket) {
   socket.write("Connected to math server!\n");
 
   socket.on('data', function (data) {
-    socket.write(solver.solve(data.toString() + "\n"));
+    socket.write(solver.solve(data) + "\n");
   });
 
 }).listen(5555);
